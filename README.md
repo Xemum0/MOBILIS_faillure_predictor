@@ -28,8 +28,8 @@ The **Random Forest Prediction API** is a Flask-based application for making pre
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone <https://github.com/Xemum0/MOBILIS_faillure_predictor/tree/main>
+   cd <api>
    ```
 2. Install dependencies:
    ```bash

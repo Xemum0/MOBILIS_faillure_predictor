@@ -1,0 +1,12 @@
+2025-01-28 15:40:16,643 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-28 15:40:16,643 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 15:40:16,650 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-01-28 15:40:17,388 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 15:40:17,399 - werkzeug - INFO -  * Debugger PIN: 105-170-526
+2025-01-28 15:42:29,545 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 15:42:29] "GET / HTTP/1.1" 200 -
+2025-01-28 15:43:53,459 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 15:43:53] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-01-28 15:43:56,875 - __main__ - INFO - Prediction made: {'prediction': {'class': 1, 'status': 'Normal', 'confidence_scores': {'Failure': 0.008284915104463008, 'Normal': 0.961254794033931, 'Warning': 0.030460290861648448}, 'threshold_warnings': []}, 'feature_analysis': {'importance': {'Traffic': 0.35087367170513567, 'Signal_Strength': 0.22245862561555318, 'Temperature': 0.21523928399814318, 'SINR': 0.15984043976060489, 'Humidity': 0.051587978920563056}, 'anomalies': []}, 'metadata': {'timestamp': '2025-01-28T15:43:56.875396', 'processing_time': '0.020s', 'model_version': '1.0'}}
+2025-01-28 15:43:56,876 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 15:43:56] "POST /predict HTTP/1.1" 200 -
+2025-01-28 15:45:10,580 - __main__ - INFO - Prediction made: {'prediction': {'class': 0, 'status': 'Failure', 'confidence_scores': {'Failure': 0.9714996990599637, 'Normal': 0.0, 'Warning': 0.02850030094004368}, 'threshold_warnings': ['High temperature detected']}, 'feature_analysis': {'importance': {'Traffic': 0.35087367170513567, 'Signal_Strength': 0.22245862561555318, 'Temperature': 0.21523928399814318, 'SINR': 0.15984043976060489, 'Humidity': 0.051587978920563056}, 'anomalies': []}, 'metadata': {'timestamp': '2025-01-28T15:45:10.580291', 'processing_time': '0.007s', 'model_version': '1.0'}}
+2025-01-28 15:45:10,581 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 15:45:10] "POST /predict HTTP/1.1" 200 -
